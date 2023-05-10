@@ -59,7 +59,31 @@
 .tweet-button:hover {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);    /* horizontal vertical blur color */
 }                                                    /* a= opacity in rgba color format */
-       
+
+
+
+
+  .joinch-button {                /* example to show dynamic padding */
+    background-color: white;
+    border-color :rgb(6, 95, 212);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    border-radius: 2px;
+    cursor: pointer;
+    padding-left: 30px;
+    padding-top: 20px;
+    transition: background-color 0.15s,     /* to use multiple transitions on the same button just useperate them using "commans (,)" */
+                color 0.15s;
+  }
+  .joinch-button:hover {
+    background-color: rgb(6, 95, 212);
+    color: white;
+  }
+  .joinch-button:active {
+    opacity: 0.7;
+  }
+
 
 
 </style>
@@ -74,4 +98,8 @@
 
 <button class="tweet-button">
   Tweet
+</button>
+
+<button class="joinch-button">
+  JOIN my channel
 </button>
